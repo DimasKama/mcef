@@ -20,13 +20,11 @@
 
 package com.cinemamod.mcef;
 
-import com.cinemamod.mcef.example.MCEFExampleMod;
 import com.mojang.logging.LogUtils;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.fml.event.lifecycle.FMLDedicatedServerSetupEvent;
-import net.neoforged.fml.loading.FMLEnvironment;
 import org.slf4j.Logger;
 
 @Mod(NeoForgeMCEFMod.MODID)
@@ -40,9 +38,7 @@ public class NeoForgeMCEFMod {
     }
 
     private void clientSetup(final FMLClientSetupEvent event) {
-        if (!FMLEnvironment.production) {
-            new MCEFExampleMod();
-        }
+
     }
 
     private void serverSetup(final FMLDedicatedServerSetupEvent event) {

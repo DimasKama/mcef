@@ -34,8 +34,7 @@ tasks.register('publishMaven', GradleBuild) {
     group = 'mcef'
     tasks = [
           ':common:publish',
-          ':fabric:publish',
-          ':neoforge:publish'
+          ':fabric:publish'
     ]
 }
 
